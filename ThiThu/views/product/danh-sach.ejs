@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <tbody>
+                    <% listSP.forEach((row)=> { %>
+                        <tr>
+                            <td>
+                                <%= row._id %>
+                            </td>
+                            <td>
+                                <%= row.ten_xe %>
+                            </td>
+                            <td>
+                                <%= row.mau_sac %>
+                            </td>
+                            <td>
+                                <%= row.gia_ban %>
+                            </td>
+                            <td>
+                                <%= row.mo_ta %>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
